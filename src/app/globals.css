@@ -31,3 +31,38 @@ body {
     text-wrap: balance;
   }
 }
+
+
+.line {
+  border-right: 2px solid rgba(255, 255, 255, 0.75);
+  color: rgba(255, 255, 255, 0.75);
+  font-family: 'Special Elite', monospace;
+  margin: 0 auto;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.typing-animation {
+  animation: blinkCursor 500ms steps(40) infinite normal, 
+  typing 2s steps(40) 0s normal;
+}
+
+@keyframes blinkCursor {
+  from {
+    border-right-color: rgb(255, 255, 255, 0.75);
+    width: 7em;
+  }
+  to {
+    border-right-color: transparent;
+    width: 7em;
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 7em;
+  }
+}
