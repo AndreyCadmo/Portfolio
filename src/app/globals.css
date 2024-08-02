@@ -18,12 +18,9 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
+  background: linear-gradient(to bottom,
       transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+      rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
 }
 
 @layer utilities {
@@ -32,6 +29,7 @@ body {
   }
 }
 
+/* Typing */
 
 .line {
   border-right: 2px solid rgba(255, 255, 255, 0.75);
@@ -43,8 +41,8 @@ body {
 }
 
 .typing-animation {
-  animation: blinkCursor 500ms steps(40) infinite normal, 
-  typing 2s steps(40) 0s normal;
+  animation: blinkCursor 500ms steps(40) infinite normal,
+    typing 2s steps(15) 0s normal;
 }
 
 @keyframes blinkCursor {
@@ -52,6 +50,7 @@ body {
     border-right-color: rgb(255, 255, 255, 0.75);
     width: 7em;
   }
+
   to {
     border-right-color: transparent;
     width: 7em;
@@ -62,6 +61,7 @@ body {
   from {
     width: 0;
   }
+
   to {
     width: 7em;
   }
