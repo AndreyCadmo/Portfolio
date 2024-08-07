@@ -18,7 +18,9 @@
 
 body {
   color: rgb(var(--foreground-rgb));
+  overflow-x: hidden;
   background: linear-gradient(to bottom,
+
       transparent,
       rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
 }
@@ -27,6 +29,19 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+/* BGS */
+.bg-header {
+  background-color: #0D0F17;
+}
+
+.bg-back {
+  background-color: #1B1E2E;
+}
+
+.bg-back2 {
+  background-color: #212435;
 }
 
 /* Typing */
@@ -66,3 +81,64 @@ body {
     width: 7em;
   }
 }
+
+/* Loading */
+
+.loader {
+  display: flex;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  align-items: center;
+  padding: 0 40rem;
+  justify-content: space-evenly;
+}
+
+.ball {
+  list-style: none;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+.ball:nth-child(1) {
+  animation: bounce-1 2.1s ease-in-out infinite;
+}
+
+@keyframes bounce-1 {
+  50% {
+    transform: translateY(-18px);
+  }
+}
+
+.ball:nth-child(2) {
+  animation: bounce-3 2.1s ease-in-out 0.3s infinite;
+}
+
+@keyframes bounce-2 {
+  50% {
+    transform: translateY(-18px);
+  }
+}
+
+.ball:nth-child(3) {
+  animation: bounce-3 2.1s ease-in-out 0.6s infinite;
+}
+
+@keyframes bounce-3 {
+  50% {
+    transform: translateY(-18px);
+  }
+}
+
+
+
+/* Tecnologias Icons */
+
+.tecno {
+  width: 2em;
+}
+
