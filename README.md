@@ -9,14 +9,9 @@ Este projeto é o meu portfólio pessoal de desenvolvedor, onde apresento meus t
   - [Sobre o Projeto](#sobre-o-projeto)
   - [Tecnologias Utilizadas](#tecnologias-utilizadas)
   - [Instalação](#instalação)
-  - [Tecnologias Utilizadas](#tecnologias-utilizadas-1)
-  - [Instalação](#instalação-1)
   - [Outros](#outros)
       - [Licença](#licença)
       - [Contato](#contato)
-  - [Outros](#outros-1)
-      - [Licença](#licença-1)
-      - [Contato](#contato-1)
 
 ## Sobre o Projeto
 
@@ -56,82 +51,20 @@ pnpm install
 ```
 4. Uso
 Para iniciar o servidor de desenvolvimento, execute:
-## Tecnologias Utilizadas
-
-- [Next.js](https://nextjs.org/)
-- [React](https://reactjs.org/)
-- [TypeScript](https://www.typescriptlang.org/)
-- [Styled Components](https://styled-components.com/)
-
-## Instalação
-
-Para instalar e rodar o projeto localmente, siga os passos abaixo:
-
-
-1. Clone o repositório:
-```bash
-git clone https://github.com/AndreyCadmo/Portfolio.git
-```
-
-2. Navegue até o diretório do projeto:
-```bash
-cd Portfolio
-```
-
-3. Instale as dependências:
-```bash
-npm install
-# ou
-yarn install
-# ou
-pnpm install
-```
-4. Uso
-Para iniciar o servidor de desenvolvimento, execute:
 
 ```bash
 npm run dev
-# ou
+# or
 # ou
 yarn dev
-# ou
+# or
 # ou
 pnpm dev
-# ou
+# or
 # ou
 bun dev
 ```
 
-Abra http://localhost:3000 no seu navegador para ver o resultado.
-
-Você pode começar a editar a página modificando app/page.tsx. A página será atualizada automaticamente conforme você edita o arquivo.
-
-Estrutura do Projeto
-Aqui está uma visão geral da estrutura do projeto:
-
-```bash
-/meu-projeto-nextjs
-├── /public
-├── /src
-│   ├── /components
-│   ├── /pages
-│   ├── /styles
-│   ├── /utils
-│   └── /app
-│       └── page.tsx
-├── .gitignore
-├── package.json
-├── README.md
-└── tsconfig.json
-```
-
-## Outros 
-
-#### Licença
-```Distribuído sob a licença MIT. Veja LICENSE para mais informações.```
-
-#### Contato 
-Andrey Cadmo - andreycadmo06@gmail.com
 Abra http://localhost:3000 no seu navegador para ver o resultado.
 
 Você pode começar a editar a página modificando app/page.tsx. A página será atualizada automaticamente conforme você edita o arquivo.
