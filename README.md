@@ -1,36 +1,94 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Meu Projeto Next.js
 
-## Getting Started
+Este projeto é o meu portfólio pessoal de desenvolvedor, onde apresento meus trabalhos e projetos. Desenvolvido utilizando Next.js com TypeScript e Styled Components, ele demonstra como configurar e utilizar essas tecnologias para criar uma aplicação web moderna e eficiente. Este portfólio é uma vitrine do meu trabalho como desenvolvedor Full-Stack, mostrando minhas habilidades e experiências na criação de soluções digitais criativas e funcionais.
 
-First, run the development server:
+## Índice
+
+- [Meu Projeto Next.js](#meu-projeto-nextjs)
+  - [Índice](#índice)
+  - [Sobre o Projeto](#sobre-o-projeto)
+  - [Tecnologias Utilizadas](#tecnologias-utilizadas)
+  - [Instalação](#instalação)
+  - [Outros](#outros)
+      - [Licença](#licença)
+      - [Contato](#contato)
+
+## Sobre o Projeto
+
+O objetivo deste projeto é apresentar um exemplo prático de uma aplicação desenvolvida com Next.js, TypeScript e Styled Components. A aplicação serve como meu portfólio pessoal, onde destaco os projetos em que trabalhei e as habilidades que desenvolvi ao longo da minha carreira como desenvolvedor Full-Stack. Através deste portfólio, é possível ver a implementação de várias funcionalidades e técnicas avançadas, demonstrando minha capacidade de criar aplicações web modernas, escaláveis e eficientes.
+
+Este projeto é estruturado de forma a facilitar a navegação e a compreensão do meu trabalho, com seções dedicadas a cada projeto, detalhando as tecnologias utilizadas e os desafios superados. Além disso, a aplicação é totalmente responsiva, garantindo uma ótima experiência de usuário em qualquer dispositivo.
+
+## Tecnologias Utilizadas
+
+- [Next.js](https://nextjs.org/)
+- [React](https://reactjs.org/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Styled Components](https://styled-components.com/)
+
+## Instalação
+
+Para instalar e rodar o projeto localmente, siga os passos abaixo:
+
+
+1. Clone o repositório:
+```bash
+git clone https://github.com/AndreyCadmo/Portfolio.git
+```
+
+2. Navegue até o diretório do projeto:
+```bash
+cd Portfolio
+```
+
+3. Instale as dependências:
+```bash
+npm install
+# ou
+yarn install
+# ou
+pnpm install
+```
+4. Uso
+Para iniciar o servidor de desenvolvimento, execute:
 
 ```bash
 npm run dev
-# or
+# ou
 yarn dev
-# or
+# ou
 pnpm dev
-# or
+# ou
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Abra http://localhost:3000 no seu navegador para ver o resultado.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Você pode começar a editar a página modificando app/page.tsx. A página será atualizada automaticamente conforme você edita o arquivo.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Estrutura do Projeto
+Aqui está uma visão geral da estrutura do projeto:
 
-## Learn More
+```bash
+/meu-projeto-nextjs
+├── /public
+├── /src
+│   ├── /components
+│   ├── /pages
+│   ├── /styles
+│   ├── /utils
+│   └── /app
+│       └── page.tsx
+├── .gitignore
+├── package.json
+├── README.md
+└── tsconfig.json
+```
 
-To learn more about Next.js, take a look at the following resources:
+## Outros 
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+#### Licença
+```Distribuído sob a licença MIT. Veja LICENSE para mais informações.```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+#### Contato 
+Andrey Cadmo - andreycadmo06@gmail.com
