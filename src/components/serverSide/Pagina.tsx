@@ -1,14 +1,16 @@
+import { Suspense } from "react";
 import Cabecalho from "./Cabecalho"
+import Loading from "../clientSide/Loading";
 
 export default function Pagina(props: any) {
     return (
         <div>
-            <div className="bg-[#1B1E2E] h-screen">
-                <Cabecalho />
-                <div className="mx-2 my-1">
+            <Suspense fallback={<Loading />}>
+                <div>
+                    <Cabecalho />
                     {props.children}
                 </div>
-            </div>
+            </Suspense>
         </div>
     );
 }
