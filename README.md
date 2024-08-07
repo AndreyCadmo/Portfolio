@@ -1,10 +1,10 @@
-# Meu Projeto Next.js
+# Meu Portfolio 📃
 
 Este projeto é o meu portfólio pessoal de desenvolvedor, onde apresento meus trabalhos e projetos. Desenvolvido utilizando Next.js com TypeScript e Styled Components, ele demonstra como configurar e utilizar essas tecnologias para criar uma aplicação web moderna e eficiente. Este portfólio é uma vitrine do meu trabalho como desenvolvedor Full-Stack, mostrando minhas habilidades e experiências na criação de soluções digitais criativas e funcionais.
 
 ## Índice
 
-- [Meu Projeto Next.js](#meu-projeto-nextjs)
+- [Meu Portfolio 📃](#meu-portfolio-)
   - [Índice](#índice)
   - [Sobre o Projeto](#sobre-o-projeto)
   - [Tecnologias Utilizadas](#tecnologias-utilizadas)
@@ -73,7 +73,7 @@ Estrutura do Projeto
 Aqui está uma visão geral da estrutura do projeto:
 
 ```bash
-/meu-projeto-nextjs
+/Portfolio
 ├── /public
 ├── /src
 │   ├── /components
