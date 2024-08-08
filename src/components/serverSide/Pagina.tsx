@@ -4,7 +4,7 @@ import Loading from "../clientSide/Loading";
 
 export default function Pagina(props: any) {
     return (
-        <div>
+        <div className="min-h-screen ">
             <Suspense fallback={<Loading />}>
                 <div>
                     <Cabecalho />

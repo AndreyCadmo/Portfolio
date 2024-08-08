@@ -1,3 +1,4 @@
+import { ThemeProvider } from "@/components/clientSide/ThemeProvider";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
@@ -17,7 +18,12 @@ export default function RootLayout({
   return (
     <html lang="pt-BR">
       <body className={inter.className}>
+      <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+        <main className="bg-backLight dark:bg-backDark ">
+
         {children}
+        </main>
+      </ThemeProvider>
       </body>
     </html>
   );

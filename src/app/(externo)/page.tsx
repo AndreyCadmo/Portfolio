@@ -1,9 +1,9 @@
-import Wave from "@/components/serverSide/Wave";
+import {Wave} from "@/components/serverSide/svg/Wave";
 import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="h-screen relative bg-[#07090D] content-center">
+    <div className="h-screen relative text-white bg-[#07090D] content-center">
       <div className="text-center relative z-10">
         <p className="font-sans font-bold text-2x1">Olá me chamo</p>
         <h1 className="line typing-animation font-sans text-4xl">Andrey Cadmo</h1>
