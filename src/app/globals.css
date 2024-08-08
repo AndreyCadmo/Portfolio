@@ -17,12 +17,7 @@
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
   overflow-x: hidden;
-  background: linear-gradient(to bottom,
-
-      transparent,
-      rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
 }
 
 @layer utilities {
@@ -31,18 +26,11 @@ body {
   }
 }
 
-/* BGS */
-.bg-header {
-  background-color: #0D0F17;
-}
-
-.bg-back {
-  background-color: #1B1E2E;
-}
-
-.bg-back2 {
-  background-color: #212435;
-}
+@layer base {
+  .text-edge-outline {
+    -webkit-text-stroke: 1px rgba(255,255,255,0.3);
+  }
+} 
 
 /* Typing */
 
@@ -142,3 +130,21 @@ body {
   width: 2em;
 }
 
+/* About */
+
+.about-image {
+      animation: float 3s ease-in-out infinite;  
+      
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
