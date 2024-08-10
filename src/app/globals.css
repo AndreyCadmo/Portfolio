@@ -1,6 +1,12 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--secondary) var(--primary);
+}
+
 
 :root {
   --foreground-rgb: 0, 0, 0;
@@ -26,12 +32,6 @@ body {
   }
 }
 
-@layer base {
-  .text-edge-outline {
-    -webkit-text-stroke: 1px rgba(255,255,255,0.3);
-  }
-} 
-
 /* Typing */
 
 .line {
@@ -51,12 +51,12 @@ body {
 @keyframes blinkCursor {
   from {
     border-right-color: rgb(255, 255, 255, 0.75);
-    width: 7em;
+    width: 7.5em;
   }
 
   to {
     border-right-color: transparent;
-    width: 7em;
+    width: 7.5em;
   }
 }
 
@@ -66,7 +66,7 @@ body {
   }
 
   to {
-    width: 7em;
+    width: 7.5em;
   }
 }
 
@@ -120,14 +120,6 @@ body {
   50% {
     transform: translateY(-18px);
   }
-}
-
-
-
-/* Tecnologias Icons */
-
-.tecno {
-  width: 2em;
 }
 
 /* About */
