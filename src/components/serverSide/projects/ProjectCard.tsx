@@ -1,6 +1,6 @@
 import Link from "next/link";
 import ProjectContent from "./ProjectsList.json";
-import { IconAlertOctagon, IconBellExclamation } from "@tabler/icons-react";
+import { IconBellExclamation } from "@tabler/icons-react";
 
 export function ProjectCard({ project }: { project: { name: string; description: string; image: string; id: number; } }) {
     return (
@@ -25,12 +25,12 @@ export function ProjectsList() {
             {ProjectContent.map((project) => (
                 <ProjectCard key={project.id} project={project} />
             ))}
-            <div className="bg-cardLight dark:bg-cardDark rounded-t-xl flex flex-col text-center">
+            <div className="bg-cardLight dark:bg-cardDark rounded-t-xl flex flex-col text-center min-h-80">
                 <div className="px-4 py-2 flex flex-col justify-between h-full">
                     <p className="font-bold">Fim dos projetos</p>
                     <div className="flex flex-col items-center text-black dark:text-gray-300 text-sm">
                         <IconBellExclamation size={40} />
-                        <p className="">Mas não fim do desenvolvimento</p>
+                        <p>Mas não fim do desenvolvimento</p>
                         <p>em breve novos projetos.</p>
                     </div>
 
