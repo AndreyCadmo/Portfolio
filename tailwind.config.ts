@@ -19,6 +19,34 @@ const config: Config = {
         "header2": "#6b7280;",
         "svgDark": "#212435",
         "svgLight": "#888E99",
+        "cardDark": "#1E2139",
+        "cardLight": "#54545F",
+      },
+      animation: {
+        skewEffect:
+          "fadeInSlow 3s ease-in-out forwards, skewEffect 20s cubic-bezier(0.4, 0, 0.6, 1) infinite ",
+        bounceSlow: "bounce 1s infinite, fadeInSlow 3s ease-in-out forwards, pulse 8s infinite",
+      },
+      keyframes: {
+        fadeInSlow: {
+          "0%": {
+            opacity: "0%",
+          },
+          "100%": {
+            opacity: "100%",
+          },
+        },
+        skewEffect: {
+          "0%": {
+            transform: "skewX(0deg)",
+          },
+          "30%": {
+            transform: "skewY(6deg)",
+          },
+          "70%": {
+            transform: "skewY(-6deg)",
+          },
+        },
       }
     },
   },
