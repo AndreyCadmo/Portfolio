@@ -1,3 +1,5 @@
+import LinkButton from "@/components/serverSide/LinkButton";
+
 export default function Page() {
   return (
     <section className="bg-backLight dark:bg-backDark justify-center flex ">
@@ -110,13 +112,10 @@ export default function Page() {
                   </span>
                 </label>
               </div>
-              <button
-                className="shadow bg-blue-950 dark:bg-indigo-600 hover:bg-indigo-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-6 rounded"
-                type="submit">
+              <LinkButton href={"#"}>
                 Enviar Mensagem
-              </button>
+              </LinkButton>
             </div>
-
           </div>
         </form>
       </div>
