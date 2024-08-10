@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function Page() {
   return (
     <div>
-      <article className=" mx-auto max-w-5xl md:text-justify p-4 prose prose-p:text-black dark:prose-invert dark:prose-p:text-white lg:prose-xl">
+      <article className=" mx-auto max-w-5xl md:text-justify p-4 prose prose-p:text-black dark:prose-invert dark:prose-p:text-white ">
         <h1>Sobre Mim</h1>
 
         <Image className="float-right ml-4 rounded-[3rem] about-image" src={"/imagens/AndreyTwo.jpg"} width={200} height={0} alt="I"></Image>
