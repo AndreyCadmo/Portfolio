@@ -21,7 +21,7 @@ export default function Page() {
 
               <li>
                 <a className="text-muted inline-flex items-center rounded-lg p-2.5 text-sm hover:bg-gray-100 focus:outline-none focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 "
-                  aria-label="Instagram" href="https://www.instagram.com/cadmo_o/?hl=pt">
+                  aria-label="Instagram" href="https://www.instagram.com/cadmo_o/?hl=pt" target="_blank">
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                     viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                     stroke-linejoin="round" className="h-5 w-5">
@@ -33,7 +33,7 @@ export default function Page() {
               </li>
 
               <li>
-                <a href="https://www.linkedin.com/in/andreycadmo/" className="text-muted inline-flex items-center rounded-lg p-2.5 text-sm hover:bg-gray-100 focus:outline-none focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 ">
+                <a href="https://www.linkedin.com/in/andreycadmo/" target="_blank" className="text-muted inline-flex items-center rounded-lg p-2.5 text-sm hover:bg-gray-100 focus:outline-none focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 ">
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                     viewBox="0 0 65 65" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                     stroke-linejoin="round" className="h-5 w-5">
@@ -45,7 +45,7 @@ export default function Page() {
 
               <li>
                 <a className="text-muted inline-flex items-center rounded-lg p-2.5 text-sm hover:bg-gray-100 focus:outline-none focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 "
-                  aria-label="Github" href="https://github.com/AndreyCadmo"><svg xmlns="http://www.w3.org/2000/svg"
+                  aria-label="Github" href="https://github.com/AndreyCadmo" target="_blank"><svg xmlns="http://www.w3.org/2000/svg"
                     width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                     stroke-linecap="round" stroke-linejoin="round" className="h-5 w-5">
                     <path

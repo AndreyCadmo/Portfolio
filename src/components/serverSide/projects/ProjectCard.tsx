@@ -4,7 +4,7 @@ import { IconBellExclamation } from "@tabler/icons-react";
 import { Suspense } from "react";
 import Loading from "@/components/clientSide/Loading";
 
-export function ProjectCard({ project }: { project: { name: string; description: string; image: string; id: number; } }) {
+export function ProjectCard({ project }: { project: { name: string; description: string; image: string; id: number; link: string } }) {
     return (
         <div className="bg-cardLight dark:bg-cardDark rounded-t-xl flex flex-col leading-normal min-h-80">
             <Suspense fallback={<Loading/>}>
@@ -16,7 +16,7 @@ export function ProjectCard({ project }: { project: { name: string; description:
                     <p className="text-black dark:text-gray-300 text-sm">{project.description}</p>
                 </div>
                 <div className="flex justify-center w-full">
-                    <Link href={`/projects/${project.id}`} className=" font-bold text-neutral-950 dark:text-cyan-100">Ver Projeto</Link>
+                    <Link href={`${project.link}`} target="_blank" className=" font-bold text-neutral-950 dark:text-cyan-100">Ver Projeto</Link>
                 </div>
             </div>
         </div>

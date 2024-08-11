@@ -3,42 +3,50 @@
                 "name": "Portfólio Escolar",
                 "description": "Portfólio criado para apresentar os trabalhos realizados durante o o ensino médio.",
                 "image": "/imagens/projects/portfolioEscolar.png",
-                "id": 1
+                "id": 1,
+                "link": "https://github.com/AndreyCadmo/Portfolio_Escolar"
         },
         {
                 "name": "Spotify - Imersão Alura",
                 "description": "Projeto criado durante a Imersão da Alura, com o objetivo de criar uma interface semelhante ao Spotify.",
                 "image": "/imagens/projects/spotifyAlura.png",
-                "id": 2
+                "id": 2,
+                "link": "https://github.com/AndreyCadmo/Spotify-Imersao-Alura"
+
         },
         {
                 "name": "Bulue",
                 "description": "Criado para fins pessoais, Realizei a criação de um empresa ficticia de desenvolvimento de jogos.",
                 "image": "/imagens/projects/bulue.png",
-                "id": 3
+                "id": 3,
+                "link": "https://github.com/AndreyCadmo/bulue-angular"
         },
         {
                 "name": "AstraSong",
                 "description": "Projeto criado para a disciplina de Programação Web Responsiva, com o objetivo (pessoal) de criar um site para ouvir músicas.",
                 "image": "/imagens/projects/astraSong.png",
-                "id": 4
+                "id": 4,
+                "link": "https://github.com/AndreyCadmo/AstraSong"
         },
         {
                 "name": "Deadshot",
                 "description": "Para o projeto de Interface Humano Computador, nosso grupo resolveu criar um site fictício de jogos FPS.",
                 "image": "/imagens/projects/deadShot.png",
-                "id": 5
+                "id": 5,
+                "link": "https://github.com/AndreyCadmo/DeadShot"
         },
         {
                 "name": "Adote uma patinha",
                 "description": "Realizei a criação do site para o projeto de Programação Web Responsiva com intuito de ser humorista o site.",
                 "image": "/imagens/projects/adotePatinha.png",
-                "id": 6
+                "id": 6,
+                "link": "https://github.com/AndreyCadmo/adote-uma-patinha"
         },
         {
                 "name": "ReciFluxo",
                 "description": "Para a A.P.S tivemos o tema de ambientação, nosso grupo resolveu criar um site para conscientização do descarte de lixo.",
                 "image": "/imagens/projects/reciFluxo.png",
-                "id": 7
+                "id": 7,
+                "link": "https://github.com/AndreyCadmo/ReciFluxo"
         }
 ]
