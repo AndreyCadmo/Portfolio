@@ -1,9 +1,10 @@
 export default function Loading() {
     return (
-        <div className="loader">
-            <li className="ball"></li>
-            <li className="ball"></li>
-            <li className="ball"></li>
-        </div>
+        <section className="dots-container">
+            <div className="dot"></div>
+            <div className="dot"></div>
+            <div className="dot"></div>
+        </section>
+
     )
 }

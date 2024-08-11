@@ -1,4 +1,3 @@
-import { WaveComponentFullClient } from "@/components/clientSide/WaveContainer/WaveComponent";
 import { ProjectsList } from "@/components/serverSide/projects/ProjectCard";
 
 

@@ -103,8 +103,8 @@ export default function Page() {
               <textarea rows={10}
                 className="appearance-none block w-full bg-gray-200 dark:bg-slate-700  border border-gray-200 dark:border-slate-800 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"></textarea>
             </div>
-            <div className="flex justify-between w-full px-3">
-              <div className="md:flex md:items-center">
+            <div className="flex justify-between w-full px-3 items-center">
+              <div className="md:flex">
                 <label className="flex justify-center font-bold">
                   <input className="mr-2 leading-tight" type="checkbox" />
                   <span className="text-sm">

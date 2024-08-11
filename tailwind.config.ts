@@ -14,43 +14,76 @@ const config: Config = {
       },
       backgroundColor: {
         "backDark": "#121212;",
-        "backLight": "#636571;",
+        "backLight": "#D0D0D4;",
         "header": "#0D0F17;",
-        "header2": "#6b7280;",
+        "header2": "#A6A6A9;",
         "svgDark": "#212435",
-        "svgLight": "#888E99",
+        "svgLight": "#A6A6A9",
         "cardDark": "#1E2139",
-        "cardLight": "#54545F",
+        "cardLight": "#C0C1C6",
+        "menuDark": "#252945",
+        "menuLight": "#C0C1C6",
       },
       animation: {
-        skewEffect:
-          "fadeInSlow 3s ease-in-out forwards, skewEffect 20s cubic-bezier(0.4, 0, 0.6, 1) infinite ",
-        bounceSlow: "bounce 1s infinite, fadeInSlow 3s ease-in-out forwards, pulse 8s infinite",
-      },
-      keyframes: {
-        fadeInSlow: {
-          "0%": {
-            opacity: "0%",
-          },
-          "100%": {
-            opacity: "100%",
-          },
-        },
-        skewEffect: {
-          "0%": {
-            transform: "skewX(0deg)",
-          },
-          "30%": {
-            transform: "skewY(6deg)",
-          },
-          "70%": {
-            transform: "skewY(-6deg)",
-          },
-        },
+        skewEffect: "fadeInSlow 3s ease-in-out forwards, skewEffect 20s cubic-bezier(0.4, 0, 0.6, 1) infinite ",
+        aboutImage: "float 3s ease-in-out infinite ",
+        typing: "blinkCursor 500ms steps(40) infinite normal, typing 2s steps(15) 0s normal",
       }
     },
+    keyframes: {
+      fadeInSlow: {
+        "0%": {
+          opacity: "0%",
+        },
+        "100%": {
+          opacity: "100%",
+        },
+      },
+      skewEffect: {
+        "0%": {
+          transform: "skewX(0deg)",
+        },
+        "30%": {
+          transform: "skewY(6deg)",
+        },
+        "70%": {
+          transform: "skewY(-6deg)",
+        },
+      },
+      float: {
+        "0%": {
+          transform: "translateY(0)",
+        },
+        "50%": {
+          transform: "translateY(-10px)",
+        },
+        "100%": {
+          transform: "translateY(0)"
+        }
+      },
+      blinkCursor: {
+        "from": {
+          "border-right-color": "rgb(255, 255, 255, 0.75)",
+          width: "7.5em",
+        },
+
+        "to": {
+          "border-right-color": " transparent",
+          width: "7.5em",
+        }
+      },
+      typing: {
+        "from": {
+          width: "0",
+        },
+        "to": {
+          width: "",
+        }
+      }
+    }
   },
   plugins: [
-    require('@tailwindcss/typography')],
+    require('@tailwindcss/typography')
+  ],
 };
 export default config;

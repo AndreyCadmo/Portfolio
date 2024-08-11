@@ -6,7 +6,7 @@ export default function Page() {
       <article className=" mx-auto max-w-5xl md:text-justify p-4 prose prose-p:text-black dark:prose-invert dark:prose-p:text-white ">
         <h1>Sobre Mim</h1>
 
-        <Image className="float-right ml-4 rounded-[3rem] about-image" src={"/imagens/AndreyTwo.jpg"} width={200} height={0} alt="I"></Image>
+        <Image className="float-right ml-4 rounded-[3rem] animate-aboutImage" src={"/imagens/AndreyTwo.jpg"} width={200} height={0} alt="I"></Image>
 
         <p>Meu nome é Andrey Cadmo estou atualmente cursando o ensino superior em Ciência da Computação.</p>
 
