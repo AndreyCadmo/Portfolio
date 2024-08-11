@@ -2,6 +2,9 @@ import { WaveComponentFullClient } from "@/components/clientSide/WaveContainer/W
 import Image from "next/image";
 
 export default function Page() {
+  const anoNascimento = 2006
+  const anoAtual = new Date().getFullYear()
+  const idade = anoAtual - anoNascimento
 
   return (
     <div>
@@ -10,7 +13,7 @@ export default function Page() {
           <div>
             <h1>Bem Vindo!</h1>
             <p>
-              Olá! Sou Andrey Cadmo, tenho 18 anos e sou apaixonado por tecnologia.
+              Olá! Sou Andrey Cadmo, tenho {idade} anos e sou apaixonado por tecnologia.
             </p>
             <p>
               Sou um desenvolvedor Full-Stack especializado em Angular, Typescript, HTML e CSS, com uma forte base em Node.js, React, Next.js, Python e Javascript.
