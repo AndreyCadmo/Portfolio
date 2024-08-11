@@ -1,11 +1,15 @@
 import Link from "next/link";
 import ProjectContent from "./ProjectsList.json";
 import { IconBellExclamation } from "@tabler/icons-react";
+import { Suspense } from "react";
+import Loading from "@/components/clientSide/Loading";
 
 export function ProjectCard({ project }: { project: { name: string; description: string; image: string; id: number; } }) {
     return (
         <div className="bg-cardLight dark:bg-cardDark rounded-t-xl flex flex-col leading-normal min-h-80">
-            <img src={project.image} className="w-full h-25 mb-3 rounded-t-xl" alt={project.name} />
+            <Suspense fallback={<Loading/>}>
+                <img src={project.image} className="w-full h-25 mb-3 rounded-t-xl" alt={project.name} />
+            </Suspense>
             <div className="px-4 py-2 flex flex-col justify-between h-full">
                 <div>
                     <p className="font-bold">{project.name}</p>
