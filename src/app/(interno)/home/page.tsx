@@ -5,6 +5,7 @@ export default function Page() {
   const anoNascimento = 2006
   const anoAtual = new Date().getFullYear()
   const idade = anoAtual - anoNascimento
+  
 
   return (
     <div>
@@ -81,7 +82,7 @@ export default function Page() {
               height={60}
             />
             <Image
-              className="animate-bounceSlow"
+              className="animate-bounce"
               alt="spring Logo"
               src={"/svg/next.svg"}
               width={60}
