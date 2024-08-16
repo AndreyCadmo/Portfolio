@@ -36,7 +36,7 @@ export default function NotifyContextProvider({ children }: NotifyContextProvide
         <NotifyContext.Provider value={{ message, setMessage }}>
             {message && (
                 <div className="max-md:w-full notify">
-                    <div className="flex flex-col items-center bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded" role="alert">
+                    <div className="flex flex-col items-center text-black px-4 py-3 rounded" role="alert">
                         <strong className="font-bold">Sucesso!</strong>
                         <span className="block sm:inline">{message}</span>
                     </div>

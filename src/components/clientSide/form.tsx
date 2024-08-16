@@ -1,7 +1,6 @@
 "use client"
 
-import { Suspense, useState } from "react"
-import Loading from "./Loading"
+import { useState } from "react"
 import { useNotify } from "@/context/notifyContext"
 
 export type EmailDataType = {
@@ -36,8 +35,10 @@ export default function Form() {
             }).then(res => {
                 setData(initialData)
                 setMessage("Mensagem enviada com sucesso!")
-            })
-                .finally(() => setIsLoading(false))
+            }).catch(err => {
+                setMessage("Erro ao enviar mensagem")
+            }).finally(() => setIsLoading(false))
+
     }
 
     return (
