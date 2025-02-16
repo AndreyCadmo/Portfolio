@@ -3,7 +3,7 @@ import Form from "@/components/clientSide/form";
 export default function Page() {
 
   return (
-    <section className="bg-backLight dark:bg-backDark justify-center flex ">
+    <section className="bg-backLight dark:bg-backDark justify-center flex items-center h-lvh ">
       <div className="grid grid-cols-1 md:grid-cols-12 pt-10 max-sm:max-w-80 md:max-w-6xl gap-10">
         <div className="md:col-span-4 ">
           <p className="text-sm leading-7 font-regular uppercase">

@@ -1,6 +1,5 @@
 import LinkButton from "@/components/serverSide/LinkButton";
 import { Wave } from "@/components/serverSide/svg/Wave";
-import Link from "next/link";
 
 export default function Home() {
   return (

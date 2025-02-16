@@ -90,9 +90,9 @@ export default function Page() {
             />
           </div>
         </div>
-        <figure className="max-sm:order-first max-sm:w-40 max-sm:self-center flex-1 z-50">
-          <Image width={420} height={0} src="/svg/euLight.svg" alt="Andrey_Imagem" className="dark:hidden animate-skewEffect" />
-          <Image width={420} height={0} src="/svg/euDark.svg" alt="Andrey_Imagem" className="hidden dark:flex animate-skewEffect" />
+        <figure className="max-sm:order-first max-sm:w-40 max-sm:self-center flex-1 z-10 justify-items-center place-content-center">
+          <Image width={540} height={0} src="/svg/euLight.svg" alt="Andrey_Imagem" className="dark:hidden animate-skewEffect" />
+          <Image width={540} height={0} src="/svg/euDark.svg" alt="Andrey_Imagem" className="hidden dark:flex animate-skewEffect" />
         </figure>
       </WaveComponentFullClient>
       {/* <WaveComponentFullClient lightColor="#888E99" darkColor="#212435" isInvert>

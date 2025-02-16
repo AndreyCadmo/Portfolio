@@ -2,9 +2,14 @@
 
 import { createContext, useContext, useMemo, useState } from "react";
 
+type MessageType = {
+    value: string,
+    type: "error" | "success"
+}
+
 type NotifyContextType = {
-    message: string,
-    setMessage: (message: string) => void
+    message: MessageType | null,
+    setMessage: (message: MessageType) => void
 }
 
 const NotifyContext = createContext({} as NotifyContextType)
@@ -22,26 +27,27 @@ type NotifyContextProviderProps = {
 }
 
 export default function NotifyContextProvider({ children }: NotifyContextProviderProps) {
-    const [message, setMessage] = useState<string>("")
+    const [message, setMessage] = useState<MessageType | null>(null)
 
     useMemo(() => {
         if (message) {
             setTimeout(() => {
-                setMessage("")
+                setMessage(null)
             }, 5000)
         }
     }, [message])
 
+
     return (
         <NotifyContext.Provider value={{ message, setMessage }}>
             {message && (
-                <div className="max-md:w-full notify">
-                    <div className="flex flex-col items-center text-black px-4 py-3 rounded" role="alert">
-                        <strong className="font-bold">Sucesso!</strong>
-                        <span className="block sm:inline">{message}</span>
+                    <div className={`max-md:w-full ${message.type === "error" ? "notify-error" : "notify"}`}>
+                        <div className="flex flex-col items-center text-black px-4 py-3 rounded" role="alert">
+                            <strong className="font-bold">{message.type.toUpperCase()}</strong>
+                            <span className="block sm:inline">{message.value}</span>
+                        </div>
                     </div>
-                </div>
-            )}
+                )}
             {children}
         </NotifyContext.Provider>
     )

@@ -7,8 +7,9 @@ import NotifyContextProvider from "@/context/notifyContext";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://andreycadmo.me"), 
   title: "Andrey Cadmo – Desenvolvedor Full-Stack",
-  description: "Desenvolvedor Full-Stack especializado em Angular, TypeScript, HTML e CSS, com experiência em React, Node.js e Python. Apaixonado por tecnologia e sempre em busca de soluções inovadoras. Confira meus projetos e entre em contato!",
+  description: "Desenvolvedor Full-Stack em formação, com foco em tecnologias como TypeScript, HTML, CSS e React. Estou sempre em busca de aprender e melhorar minhas habilidades, criando soluções inovadoras e colaborando em novos projetos. Confira os projetos em que estou trabalhando e entre em contato para futuras colaborações!",
   authors: [
     {
       name: "Andrey Cadmo",
@@ -82,7 +83,7 @@ export const metadata: Metadata = {
     title: "Portfolio | Andrey Cadmo",
     description:
       "Desenvolvedor Full-Stack especializado em Angular, TypeScript, HTML e CSS, com experiência em React, Node.js e Python. Apaixonado por tecnologia e sempre em busca de soluções inovadoras. Confira meus projetos e entre em contato!",
-    images: ["/imagens/logos/Ac.png"],
+    images: ["https://andreycadmo.me/imagens/logos/AcDark.png"],
   },
   openGraph: {
     type: "website",
@@ -90,7 +91,8 @@ export const metadata: Metadata = {
     url: "https://andreycadmo.me",
     siteName: "Andrey Cadmo",
     title: "Andrey Cadmo – Desenvolvedor Full-Stack",
-    description: "Desenvolvedor Full-Stack especializado em Angular, TypeScript, HTML e CSS, com experiência em React, Node.js e Python. Apaixonado por tecnologia e sempre em busca de soluções inovadoras. Confira meus projetos e entre em contato!",
+    description: "Desenvolvedor Full-Stack em formação, com foco em tecnologias como TypeScript, HTML, CSS e React. Estou sempre em busca de aprender e melhorar minhas habilidades, criando soluções inovadoras e colaborando em novos projetos. Confira os projetos em que estou trabalhando e entre em contato para futuras colaborações!",
+    images: ["https://andreycadmo.me/imagens/logos/AcDark.png"]
   },
 };
 

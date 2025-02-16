@@ -4,9 +4,8 @@ import { ThemeToggle } from "../clientSide/ThemeToggle";
 import { Menu } from "../clientSide/menu";
 
 export default function Cabecalho() {
-
     return (
-        <div className="flex bg-header2 dark:bg-header p-2 justify-between items-center z-10 relative">
+        <div className="flex bg-header2 dark:bg-header p-2 justify-between items-center w-full md:fixed relative top-0 left-0 z-50">
             <ButtonCabecalho link="/"><img className="w-8" src="imagens/logos/Ac.png" alt="Andrey Cadmo" /></ButtonCabecalho>
             <Menu/>
             <div className="flex gap-8 max-md:hidden">

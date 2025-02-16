@@ -40,7 +40,7 @@ export function WaveComponent({
             </div>)
 
     return (
-        <section className="min-h-[93vh] flex max-sm:flex-col justify-between relative">
+        <section className="min-h-lvh flex max-sm:flex-col justify-between relative">
             <Wave2 className="right-0 top-0 scale-y-[-1] " fill={fillColor} />
             {children}
             <Wave2 className="left-0 bottom-0 scale-x-[-1]" fill={fillColor} />

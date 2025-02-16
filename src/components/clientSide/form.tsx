@@ -23,21 +23,24 @@ export default function Form() {
 
     const [data, setData] = useState<EmailDataType>(initialData);
 
-    async function handleOnSubmit(e: React.FormEvent<HTMLFormElement>) {
+    function handleOnSubmit(e: React.FormEvent<HTMLFormElement>) {
         e.preventDefault()
-        setIsLoading(true),
-            await fetch("/api/email", {
-                method: "POST",
-                headers: {
-                    "Content-Type": "application/json"
-                },
-                body: JSON.stringify(data)
-            }).then(res => {
-                setData(initialData)
-                setMessage("Mensagem enviada com sucesso!")
-            }).catch(err => {
-                setMessage("Erro ao enviar mensagem")
-            }).finally(() => setIsLoading(false))
+        setIsLoading(true);
+        fetch("/api/email", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(data)
+        }).then(res => {
+            if (!res.ok) throw new Error("Erro ao enviar mensagem!")
+        })
+        .then(res => {
+            setData(initialData)
+            setMessage({ value: "Mensagem enviada com sucesso!", type: "success" })
+        }).catch(err => {
+            setMessage({ value: "Erro ao enviar mensagem!", type: "error" })
+        }).finally(() => setIsLoading(false))
 
     }
 

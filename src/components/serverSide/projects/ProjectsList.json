@@ -1,52 +1,74 @@
 [
         {
-                "name": "Portfólio Escolar",
-                "description": "Portfólio criado para apresentar os trabalhos realizados durante o o ensino médio.",
-                "image": "/imagens/projects/portfolioEscolar.png",
-                "id": 1,
-                "link": "https://github.com/AndreyCadmo/Portfolio_Escolar"
+          "name": "Portfólio Escolar",
+          "description": "Este projeto foi desenvolvido para exibir atividades e projetos realizados ao longo da minha trajetória escolar. Ele reúne uma série de trabalhos e eventos educativos, evidenciando as experiências adquiridas e a evolução ao longo dos anos. É uma vitrine do aprendizado em diversas áreas e também um espaço para refletir sobre as conquistas de uma fase importante da vida.",
+          "image": "/imagens/projects/portfolioEscolar.png",
+          "id": 1,
+          "link": "https://github.com/AndreyCadmo/Portfolio_Escolar",
+          "technologies": ["HTML", "CSS", "JavaScript"]
         },
         {
-                "name": "Spotify - Imersão Alura",
-                "description": "Projeto criado durante a Imersão da Alura, com o objetivo de criar uma interface semelhante ao Spotify.",
-                "image": "/imagens/projects/spotifyAlura.png",
-                "id": 2,
-                "link": "https://github.com/AndreyCadmo/Spotify-Imersao-Alura"
-
+          "name": "Spotify - Imersão Alura",
+          "description": "Este projeto foi criado durante a Imersão Alura, um evento de capacitação para desenvolvedores. O objetivo foi criar uma interface semelhante ao Spotify, permitindo aos usuários interagir com playlists, álbuns e faixas, além de aplicar conceitos de design responsivo e navegação intuitiva. O desafio foi não apenas replicar a interface, mas também aprimorar a experiência do usuário, tornando-a funcional e acessível em diferentes dispositivos.",
+          "image": "/imagens/projects/spotifyAlura.png",
+          "id": 2,
+          "link": "https://github.com/AndreyCadmo/Spotify-Imersao-Alura",
+          "technologies": ["HTML", "CSS", "JavaScript", "Spotify API"],
+          "live": "https://spotifyalura.vercel.app"
         },
         {
-                "name": "Bulue",
-                "description": "Criado para fins pessoais, Realizei a criação de um empresa ficticia de desenvolvimento de jogos.",
-                "image": "/imagens/projects/bulue.png",
-                "id": 3,
-                "link": "https://github.com/AndreyCadmo/bulue-angular"
+          "name": "Bulue",
+          "description": "O Bulue é uma aplicação fictícia de uma empresa de desenvolvimento de jogos, criada para fins pessoais. O projeto foi uma maneira de explorar o processo de criação de uma startup, com a adição de recursos como uma página institucional, catálogo de jogos e integração com redes sociais. Foi um exercício para compreender como uma aplicação voltada para o entretenimento digital pode ser estruturada de forma profissional.",
+          "image": "/imagens/projects/bulue.png",
+          "id": 3,
+          "link": "https://github.com/AndreyCadmo/bulue-angular",
+          "technologies": ["Angular", "HTML", "CSS", "TypeScript"],
+          "live": "https://bulue.vercel.app"
         },
         {
-                "name": "AstraSong",
-                "description": "Projeto criado para a disciplina de Programação Web Responsiva, com o objetivo (pessoal) de criar um site para ouvir músicas.",
-                "image": "/imagens/projects/astraSong.png",
-                "id": 4,
-                "link": "https://github.com/AndreyCadmo/AstraSong"
+          "name": "AstraSong",
+          "description": "AstraSong é um projeto pessoal criado para mostrar meu conhecimento em CSS e HTML. A ideia era construir um site simples com a interface de um reprodutor de músicas, focando em design e interatividade sem utilizar nenhuma API. O projeto me permitiu explorar conceitos de layout responsivo, animações e transições, aprimorando minhas habilidades em design de interface e experiência do usuário.",
+          "image": "/imagens/projects/astraSong.png",
+          "id": 4,
+          "link": "https://github.com/AndreyCadmo/AstraSong",
+          "technologies": ["HTML", "CSS", "JavaScript"],
+          "live": "https://astrasong.vercel.app"
         },
         {
-                "name": "Deadshot",
-                "description": "Para o projeto de Interface Humano Computador, nosso grupo resolveu criar um site fictício de jogos FPS.",
-                "image": "/imagens/projects/deadShot.png",
-                "id": 5,
-                "link": "https://github.com/AndreyCadmo/DeadShot"
+          "name": "Deadshot",
+          "description": "O Deadshot foi criado para o projeto de Interface Humano-Computador (IHC), onde nosso grupo optou por desenvolver um site fictício para um jogo de FPS (First-Person Shooter). O foco estava em criar uma experiência imersiva para os usuários, com navegação fluida e integração com elementos gráficos. O projeto envolveu um trabalho colaborativo, onde aprendi a importância do design e da usabilidade na criação de interfaces de jogos.",
+          "image": "/imagens/projects/deadShot.png",
+          "id": 5,
+          "link": "https://github.com/AndreyCadmo/DeadShot",
+          "technologies": ["Angular", "HTML", "CSS", "TypeScript"],
+          "live": "https://deadshotgames.vercel.app"
         },
         {
-                "name": "Adote uma patinha",
-                "description": "Realizei a criação do site para o projeto de Programação Web Responsiva com intuito de ser humorista o site.",
-                "image": "/imagens/projects/adotePatinha.png",
-                "id": 6,
-                "link": "https://github.com/AndreyCadmo/adote-uma-patinha"
+          "name": "Adote uma patinha",
+          "description": "O Adote uma Patinha é um projeto desenvolvido para Programação Web Responsiva com um objetivo humorístico. A ideia central era criar um site fictício de adoção de pets, no qual os usuários pudessem adotar animais de forma divertida e envolvente. O projeto, além de aprender práticas de design web, me permitiu explorar como criar experiências lúdicas, usando uma abordagem descontraída e amigável.",
+          "image": "/imagens/projects/adotePatinha.png",
+          "id": 6,
+          "link": "https://github.com/AndreyCadmo/adote-uma-patinha",
+          "technologies": ["HTML", "CSS", "JavaScript"],
+          "live": "https://adotepatinha.vercel.app"
         },
         {
-                "name": "ReciFluxo",
-                "description": "Para a A.P.S tivemos o tema de ambientação, nosso grupo resolveu criar um site para conscientização do descarte de lixo.",
-                "image": "/imagens/projects/reciFluxo.png",
-                "id": 7,
-                "link": "https://github.com/AndreyCadmo/ReciFluxo"
+          "name": "ReciFluxo",
+          "description": "O ReciFluxo foi o projeto desenvolvido para a A.P.S com o tema de conscientização ambiental sobre o descarte de lixo. A ideia foi criar uma plataforma que orientasse os usuários sobre como realizar a separação correta de resíduos e promover práticas sustentáveis. Com um design intuitivo e informativo, o projeto visa sensibilizar a população sobre o impacto do descarte inadequado, reforçando a importância da reciclagem.",
+          "image": "/imagens/projects/reciFluxo.png",
+          "id": 7,
+          "link": "https://github.com/AndreyCadmo/ReciFluxo",
+          "technologies": ["Angular", "HTML", "CSS", "JavaScript"],
+          "live": "https://recifluxo.vercel.app"
+        },
+        {
+          "name": "Portfólio Pessoal",
+          "description": "Este é o meu Portfólio Pessoal, onde compartilho minha trajetória acadêmica e profissional, com foco nos projetos que desenvolvi ao longo da minha carreira. O objetivo é apresentar um espaço visualmente agradável e funcional para mostrar minhas habilidades e conhecimentos em desenvolvimento front-end, além de destacar minha jornada e evolução ao longo do tempo. Este portfólio é um reflexo da minha dedicação e paixão pela programação.",
+          "image": "/imagens/projects/portfolio_pessoal.png",
+          "id": 8,
+          "link": "https://github.com/AndreyCadmo/Portfolio",
+          "technologies": ["Next.js", "TypeScript", "TailwindCSS"],
+          "live": "https://andreycadmo.me"
         }
-]
+      ]
+      
