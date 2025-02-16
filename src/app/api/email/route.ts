@@ -32,7 +32,7 @@ export async function POST(req: NextRequest, res: NextResponse) {
             html: emailEmbedClient(data)
         })
     ]);
-    
+
     if (emailToMe.accepted && emailToClient.accepted) {
         return new Response(JSON.stringify({ message: "Email enviado com sucesso!" }), { status: 200, headers: { "Content-Type": "application/json" } });
     } else {
@@ -45,66 +45,82 @@ const emailEmbedMe = (data: EmailDataType) => {
 
     return `
         <!DOCTYPE html>
-<html lang="pt-BR">
-
+<html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Andrey Cadmo</title>
+    <title>Nova Mensagem Recebida</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
             margin: 0;
             padding: 0;
         }
-
-        div {
-            background-color: #121212;
-            color: #fff;
-            width: 80%;
-            margin: 0 auto;
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            background: #1e293b;
             padding: 20px;
-            border-radius: 5px;
-            border-color: #1b1b1b;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            margin-top: 50px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            color: #e2e8f0;
         }
-
-        h1 {
+        .header {
+            background-color: #2563eb;
+            padding: 20px;
+            border-radius: 8px 8px 0 0;
+            color: #fff;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .content {
+            padding: 20px;
+            font-size: 16px;
+            color: #e2e8f0;
+            text-align: left;
+        }
+        .footer {
+            margin-top: 20px;
+            padding: 15px;
+            font-size: 14px;
+            color: #94a3b8;
+            border-top: 1px solid #334155;
             text-align: center;
         }
-
-        p {
-            font-size: 16px;
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 15px;
+            background: #2563eb;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
         }
-
-        img {
-            display: block;
-            margin: 0 auto;
-            margin-top: 20px;
-            width: 100px;
-        }
-
-        section {
-            margin-top: 10vw;
+        .btn:hover {
+            background: #1d4ed8;
         }
     </style>
 </head>
 <body>
-    <div>
-        <h1>FORMULÁRIO PREENCHIDO ✔</h1>
-
-        <h2>Dados Fornecidos:</h2>
-        <p>Nome: ${data.nome}</p>
-        <p>Email: ${data.email}</p>
-        <p>Assunto: ${data.assunto}</p>
-        <p>Mensagem: ${data.mensagem} </p>
-        
-        <img src="https://andreycadmo.me/imagens/logos/Ac.png" alt="Logo_AC">
+    <div class="container">
+        <div class="header">Nova mensagem recebida</div>
+        <div class="content">
+            <p><strong>Nome:</strong> ${data.nome}</p>
+            <p><strong>Email:</strong> ${data.email}</p>
+            <p><strong>Assunto:</strong> ${data.assunto}</p>
+            <p><strong>Mensagem:</strong></p>
+            <p>${data.mensagem}</p>
+            <a href="mailto:${data.email}" class="btn">Responder</a>
+        </div>
+        <div class="footer">
+            &copy; 2025 Andrey Cadmo - <a href="http://andreycadmo.me" style="color: #60a5fa;">andreycadmo.me</a>
+        </div>
     </div>
 </body>
 </html>
+
     `
 }
 
@@ -151,6 +167,9 @@ const emailEmbedClient = (data: EmailDataType) => {
             font-size: 14px;
             color: #94a3b8;
             border-top: 1px solid #334155;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
         }
         .btn {
             display: inline-block;
@@ -165,6 +184,10 @@ const emailEmbedClient = (data: EmailDataType) => {
         .btn:hover {
             background: #1d4ed8;
         }
+        .logo {
+            max-width: 70px;
+            height: auto;
+        }
     </style>
 </head>
 <body>
@@ -177,7 +200,8 @@ const emailEmbedClient = (data: EmailDataType) => {
             <a href="http://andreycadmo.me" class="btn">Acessar Portfólio</a>
         </div>
         <div class="footer">
-            &copy; 2025 Andrey Cadmo - <a href="http://andreycadmo.me" style="color: #60a5fa;">andreycadmo.me</a>
+            <img src="http://andreycadmo.me/imagens/logos/Ac.png" alt="Andrey Cadmo Logo" class="logo">
+            <span>&copy; 2025 Andrey Cadmo - <a href="http://andreycadmo.me" style="color: #60a5fa;">andreycadmo.me</a></span>
         </div>
     </div>
 </body>
