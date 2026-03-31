@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { supabase } from "@/app/api/lib/supabase"; 
+import { supabase } from "@/app/api/lib/supabase";
 import { useRouter } from "next/navigation";
 
 export default function AdminLogin() {
@@ -22,7 +22,7 @@ export default function AdminLogin() {
     if (error) {
       alert("Acesso Negado: " + error.message);
     } else {
-      router.push("/admin/dashboard"); 
+      router.push("/admin/dashboard");
     }
     setLoading(false);
   };
@@ -45,7 +45,7 @@ export default function AdminLogin() {
           />
           <input
             type="password"
-            placeholder="Sua senha secreta"
+            placeholder="Sua senha"
             className="w-full px-4 py-3 bg-neutral-800 border border-neutral-700 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-blue-600 transition-all"
             onChange={(e) => setPassword(e.target.value)}
             required
