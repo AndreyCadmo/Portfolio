@@ -1,97 +1,100 @@
-# Meu Portfolio 📃
+# 💻 Meu Portfolio
 
-Este projeto é o meu portfólio pessoal de desenvolvedor, onde apresento meus trabalhos e projetos. Desenvolvido utilizando Next.js com TypeScript e Styled Components, ele demonstra como configurar e utilizar essas tecnologias para criar uma aplicação web moderna e eficiente. Este portfólio é uma vitrine do meu trabalho como desenvolvedor Full-Stack, mostrando minhas habilidades e experiências na criação de soluções digitais criativas e funcionais.
+Este é o meu espaço pessoal onde documento minha evolução como desenvolvedor Full-Stack. O projeto não é apenas uma vitrine de trabalhos, mas também um exemplo prático de uma arquitetura sólida utilizando **Next.js**, **TypeScript** e **Styled Components**.
 
-## Índice
+-----
 
-- [Meu Portfolio 📃](#meu-portfolio-)
-  - [Índice](#índice)
-  - [Sobre o Projeto](#sobre-o-projeto)
-  - [Tecnologias Utilizadas](#tecnologias-utilizadas)
-  - [Instalação](#instalação)
-  - [Outros](#outros)
-      - [Licença](#licença)
-      - [Contato](#contato)
+## 📌 Índice
 
-## Sobre o Projeto
+  * [Sobre o Projeto](https://www.google.com/search?q=%23-sobre-o-projeto)
+  * [Tecnologias Utilizadas](https://www.google.com/search?q=%23-tecnologias-utilizadas)
+  * [Estrutura do Projeto](https://www.google.com/search?q=%23-estrutura-do-projeto)
+  * [Instalação e Uso](https://www.google.com/search?q=%23-instala%C3%A7%C3%A3o-e-uso)
+  * [Licença e Contato](https://www.google.com/search?q=%23-licen%C3%A7a-e-contato)
 
-O objetivo deste projeto é servir como meu portfólio pessoal, apresentando uma visão abrangente das minhas habilidades e experiências como desenvolvedor Full-Stack. Desenvolvido com Next.js, TypeScript e Styled Components, o portfólio demonstra a implementação prática dessas tecnologias em uma aplicação web moderna e escalável.
+-----
 
-Este portfólio inclui seções detalhadas sobre os projetos que desenvolvi, destacando as tecnologias utilizadas, os desafios enfrentados e as soluções implementadas. A aplicação é projetada para ser intuitiva e fácil de navegar, permitindo que os visitantes explorem meu trabalho de maneira organizada e eficiente. Além disso, a aplicação é totalmente responsiva, garantindo uma experiência de usuário de alta qualidade em qualquer dispositivo.
+## 🚀 Sobre o Projeto
 
-## Tecnologias Utilizadas
+O objetivo deste portfólio é demonstrar competências técnicas na criação de interfaces modernas, escaláveis e totalmente responsivas.
 
-- [Next.js](https://nextjs.org/)
-- [React](https://reactjs.org/)
-- [TypeScript](https://www.typescriptlang.org/)
-- [Styled Components](https://styled-components.com/)
+  * **Foco em Performance:** Utilizando as otimizações nativas do Next.js.
+  * **Segurança de Tipagem:** Código robusto escrito integralmente em TypeScript.
+  * **Estilização Dinâmica:** CSS-in-JS com Styled Components para componentes modulares.
+  * **Experiência do Usuário:** Design intuitivo focado em acessibilidade e fluidez.
 
-## Instalação
+-----
 
-Para instalar e rodar o projeto localmente, siga os passos abaixo:
+## 🛠 Tecnologias Utilizadas
 
+| Tecnologia | Finalidade |
+| :--- | :--- |
+| **Next.js** | Framework React para produção e SSR |
+| **TypeScript** | Tipagem estática para maior manutenibilidade |
+| **Styled Components** | Estilização baseada em componentes |
+| **React** | Biblioteca base para construção da UI |
+| **Supabase** | Backend as a Service (BaaS) para gestão de dados |
 
-1. Clone o repositório:
-```bash
-git clone https://github.com/AndreyCadmo/Portfolio.git
-```
+-----
 
-2. Navegue até o diretório do projeto:
-```bash
-cd Portfolio
-```
+## 📂 Estrutura do Projeto
 
-3. Instale as dependências:
-```bash
-npm install
-# ou
-yarn install
-# ou
-pnpm install
-```
-4. Uso
-Para iniciar o servidor de desenvolvimento, execute:
-
-```bash
-npm run dev
-# or
-# ou
-yarn dev
-# or
-# ou
-pnpm dev
-# or
-# ou
-bun dev
-```
-
-Abra http://localhost:3000 no seu navegador para ver o resultado.
-
-Você pode começar a editar a página modificando app/page.tsx. A página será atualizada automaticamente conforme você edita o arquivo.
-
-Estrutura do Projeto
-Aqui está uma visão geral da estrutura do projeto:
+Abaixo, a organização simplificada do diretório `src`:
 
 ```bash
 /Portfolio
-├── /public
+├── /public          # Ativos estáticos (imagens, ícones)
 ├── /src
-│   ├── /components
-│   ├── /pages
-│   ├── /styles
-│   ├── /utils
-│   └── /app
-│       └── page.tsx
-├── .gitignore
-├── package.json
-├── README.md
-└── tsconfig.json
+│   ├── /components  # Componentes reutilizáveis (Botões, Cards, Nav)
+│   ├── /styles      # Temas globais e configurações de CSS-in-JS
+│   ├── /utils       # Funções auxiliares e helpers
+│   └── /app         # App Router (Next.js 13+) e páginas principais
+├── tsconfig.json    # Configurações do TypeScript
+└── package.json     # Dependências e scripts
 ```
 
-## Outros 
+-----
 
-#### Licença
-```Distribuído sob a licença MIT. Veja LICENSE para mais informações.```
+## ⚙️ Instalação e Uso
 
-#### Contato 
-Andrey Cadmo - andreycadmo06@gmail.com
+Se desejar explorar o código localmente para fins de estudo, siga os passos:
+
+### 1\. Clonagem
+
+```bash
+git clone https://github.com/AndreyCadmo/Portfolio.git
+cd Portfolio
+```
+
+### 2\. Dependências
+
+```bash
+npm install # ou yarn install
+```
+
+### 3\. Desenvolvimento
+
+Inicie o servidor local em `http://localhost:3000`:
+
+```bash
+npm run dev
+```
+
+-----
+
+## 📄 Licença e Contato
+
+### Licença
+
+> [\!IMPORTANT]
+> **Copyright © 2026 Andrey Cadmo. Todos os direitos reservados.**
+> O código e o design deste portfólio são de propriedade intelectual exclusiva do autor. Não é permitida a reprodução, distribuição ou uso comercial/pessoal sem autorização prévia.
+
+### Contato
+
+Fique à vontade para entrar em contato para oportunidades ou networking:
+
+  * **Email:** [andreycadmo06@gmail.com](mailto:andreycadmo06@gmail.com)
+  * **LinkedIn:** [Andrey Cadmo](https://www.google.com/search?q=https://www.linkedin.com/in/andreycadmo) 
+  * **GitHub:** [@AndreyCadmo](https://www.google.com/search?q=https://github.com/AndreyCadmo)
+
