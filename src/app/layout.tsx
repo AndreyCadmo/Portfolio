@@ -26,6 +26,10 @@ export const metadata: Metadata = {
     ],
     shortcut: ["/imagens/logos/AcDark.png"],
   },
+
+  verification: {
+    google: "SfKHzNbTE3ukg1J9U2YDZUdr8Xz1PlBvVDZbbJgYR8E",
+  },
   keywords: [
     "Desenvolvedor Full-Stack",
     "Full-Stack",
