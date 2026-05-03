@@ -46,7 +46,7 @@ export default function Page() {
             <div className="dark:bg-gray-900/50 bg-gray-400 border border-zinc-800 p-8 rounded-3xl dark:hover:bg-gray-900/100 hover:bg-gray-500/70 transition-all">
               <h3 className="m-0 dark:text-blue-500 text-blue-950 mb-4 uppercase text-xs tracking-widest font-bold">O Primeiro Contato</h3>
               <p className="text-zinc-300">
-                Tudo começou com a pergunta: "Como isso funciona?". Cresci explorando jogos e sites, fascinado pela engenharia por trás das telas. O ponto de virada foi o desenvolvimento de um <strong>bot para Discord</strong>, onde vi, pela primeira vez, a lógica se transformar em ação imediata. Com o incentivo fundamental do meu irmão, já formado na área, dei meus primeiros passos no mundo do HTML, CSS e JavaScript, culminando na criação de um portfólio escolar que marcou o início oficial da minha carreira.
+                Tudo começou com a pergunta: &quot;Como isso funciona?&quot;. Cresci explorando jogos e sites, fascinado pela engenharia por trás das telas. O ponto de virada foi o desenvolvimento de um <strong>bot para Discord</strong>, onde vi, pela primeira vez, a lógica se transformar em ação imediata. Com o incentivo fundamental do meu irmão, já formado na área, dei meus primeiros passos no mundo do HTML, CSS e JavaScript, culminando na criação de um portfólio escolar que marcou o início oficial da minha carreira.
               </p>
             </div>
 
@@ -100,14 +100,14 @@ export default function Page() {
               </div>
             </div>
             <p className="mt-6 text-sm text-zinc-500">
-              Adoro o desafio de jogos "soulslike" e a liberdade criativa de mundos abertos, elementos que moldaram minha persistência como programador.
+              Adoro o desafio de jogos  &quot;soulslike&quot; e a liberdade criativa de mundos abertos, elementos que moldaram minha persistência como programador.
             </p>
           </div>
         </div>
 
         <div className="text-center py-10 border-t border-zinc-800">
           <p className="text-zinc-500 italic">
-            "Sempre em constante evolução, buscando o próximo desafio técnico."
+            &quot;Sempre em constante evolução, buscando o próximo desafio técnico.&quot;
           </p>
         </div>
 
