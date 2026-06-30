@@ -13,7 +13,7 @@ const config: Config = {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))"
       },
       backgroundColor: {
-        "backDark": "#121212;",
+        "backDark": "#09090b",
         "backLight": "#D0D0D4;",
         "header": "#0D0F17;",
         "header2": "#A6A6A9;",
@@ -28,9 +28,19 @@ const config: Config = {
         skewEffect: "fadeInSlow 3s ease-in-out forwards, skewEffect 20s cubic-bezier(0.4, 0, 0.6, 1) infinite ",
         aboutImage: "float 3s ease-in-out infinite ",
         typing: "blinkCursor 500ms steps(40) infinite normal, typing 2s steps(15) 0s normal",
+        marquee: "marquee 25s linear infinite",
+        marquee2: "marquee2 25s linear infinite",
       }
     },
     keyframes: {
+      marquee: {
+        "0%": { transform: "translateX(0%)" },
+        "100%": { transform: "translateX(-50%)" },
+      },
+      marquee2: {
+        "0%": { transform: "translateX(100%)" },
+        "100%": { transform: "translateX(0%)" },
+      },
       fadeInSlow: {
         "0%": {
           opacity: "0%",
@@ -39,6 +49,7 @@ const config: Config = {
           opacity: "100%",
         },
       },
+
       skewEffect: {
         "0%": {
           transform: "skewX(0deg)",
