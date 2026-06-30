@@ -165,20 +165,12 @@ export function ProjectsList() {
                         </p>
                     </div>
 
-                    <footer className="border-t border-gray-100 dark:border-gray-800 bg-white dark:bg-black mt-20">
+                    <footer className="border-t border-gray-100 dark:border-gray-800 bg-white dark:bg-backDark mt-20">
                         <div className="max-w-screen-2xl mx-auto px-5 py-8 flex flex-col sm:flex-row justify-between items-center gap-4 text-gray-500">
 
-                            <p className="text-xs font-medium">
+                            <p className="text-xs font-medium" onClick={() => window.location.href = "/admin"}>
                                 © {new Date().getFullYear()} Andrey Cadmo. Todos os direitos reservados.
                             </p>
-
-                            <Link
-                                href="/admin"
-                                className="text-[10px] font-mono text-gray-300 dark:text-gray-700 hover:text-blue-500 transition-colors"
-                                title="Acesso Administrativo"
-                            >
-                                [adm]
-                            </Link>
                         </div>
                     </footer>
                 </div>
