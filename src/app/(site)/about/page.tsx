@@ -52,7 +52,7 @@ export default function Page() {
             <div className="absolute inset-0.5 bg-gradient-to-r from-blue-600 to-cyan-500 rounded-[2.5rem] blur opacity-25 group-hover:opacity-50 transition duration-1000 group-hover:duration-200"></div>
             <Image
               className="relative rounded-[2.5rem] shadow-2xl animate-aboutImage border-2 border-zinc-300 dark:border-zinc-800 transition-transform duration-500 group-hover:scale-[1.02]"
-              src={"/imagens/logos/AndreyAbout.png"}
+              src={"/images/AndreyAbout.png"}
               width={350}
               height={350}
               alt="Eu mesmo"
